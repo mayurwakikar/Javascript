@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+let op=[];
+const array = [
+{
+fullname:"abc def",
+age:23,
+},
+{
+fullname:"pqr",
+age:34,
+}
+];
+//console.log('main array:',array);
+
+const array2= array.map(ele => {
+//var arr3 =ele.fullname.split(" ");
+const  [firstname,lastname]=ele.fullname.split(' ');
+return {
+        firstname:ele.fullname,
+        lastname:ele.fullname,
+        age:ele.age,
+    };
+});
+
+console.log(array2);
+</script>
+
+</body>
+</html>

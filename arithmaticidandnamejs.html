@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()             //by id
+        {
+            var a=parseInt(document.getElementById("no1").value);
+
+            var b=parseInt(document.getElementById("no2").value);
+
+            var c=a+b;
+
+            document.getElementById("res").value=c;
+        }
+        function sub()
+        {
+            var a=parseInt(document.getElementById("no1").value);
+
+            var b=parseInt(document.getElementById("no2").value);
+
+            var c=a-b;
+
+            document.getElementById("res").value=c;
+        }
+        
+    </script>
+</head>
+<body>
+    
+        <form>
+            <table>
+                <tr>
+                    <td>No1</td>
+                    <td>
+                        <input type="text" name="no1" id="no1"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>No2</td>
+                    <td>
+                        <input type="text" name="no2" id="no2"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td>
+                        <input type="text" name="res" id="res"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="add" onclick="add()"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="sub" onclick="sub()"></input>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    
+</body>
+</html>

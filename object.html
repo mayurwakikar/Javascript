@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            fname :"Mayur",
+            lname :"Wakikar",
+            age :25,
+            movies : ["Abc","pqr","xyz"],
+            nos : [11,22,33,44],
+            salary : function()
+            {
+                return 190000;
+            },
+            fullname : function()
+            {
+                return this.fname + " " + this.lname;
+            },
+            living : {
+                    'city' : "Pune",
+                    'country' : "India"
+            }
+        };
+       console.log(obj.fname);
+       // document.write(obj);
+       console.log(obj.movies[1]);
+       console.log(obj.nos[2]);
+       console.log(obj.salary());
+       document.write(obj.salary());
+       console.log(obj.fullname());
+       document.write(obj.fullname());
+       document.write(obj.living.city);
+    </script>
+</body>
+</html>

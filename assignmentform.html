@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD EmployeeForm</title>
+    <link rel="stylesheet" href="style.css">
+    <h1>PHP-MySql CRUD</h1>
+    <hr>
+</head>
+<body>
+    <div class="employee-form">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" id="form" method="post">
+            <div>
+                <label>Enter Name</label><label class="validation-error hide" id="fullNameValidationError"></label> </label>
+                <br><input type="text" name="name" id="name" placeholder="name">
+            </div>
+            <div>
+                <label>Email Id</label>
+                <br><input type="text" name="email" id="email" placeholder="email">
+            </div>
+            <div>
+                <label>Enter Number :</label>
+                <br><input type="number" name="no" id="no" placeholder="contact no" >
+            </div>
+            <div  class="form-action-buttons">
+                <input type="submit" value="Submit">
+            </div>
+            
+        </form>
+    </div>
+    <div class = "employees-table">
+        <table class="list" id="employeeList" border="2">
+            <thead>
+                <tr>
+                    <!-- <th>Sr No</th> -->
+                    <th>Full Name</th>
+                    <th>Email Id</th>
+                    <th>Number</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
